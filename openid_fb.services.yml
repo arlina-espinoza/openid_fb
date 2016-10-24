@@ -1,0 +1,11 @@
+services:
+  openid_fb.route_subscriber:
+    class: Drupal\openid_fb\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  openid_fb.redirect403:
+    class: Drupal\openid_fb\EventSubscriber\Redirect403Subscriber
+    arguments: ["@redirect.destination"]
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,7 @@
+name: Open ID Connect Facebook Client
+type: module
+description: Social login extra functionality
+core: 8.x
+package: Custom
+dependencies:
+  - openid_connect

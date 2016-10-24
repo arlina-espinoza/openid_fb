@@ -1,0 +1,8 @@
+
+openid_fb.sso_login_controller_loginPage:
+  path: 'user/login/sso'
+  defaults:
+    _controller: '\Drupal\openid_fb\Controller\SSOLoginController::loginPage'
+    _title: 'Log in'
+  requirements:
+    _access: 'TRUE'
